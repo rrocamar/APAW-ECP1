@@ -8,6 +8,8 @@ public class Restaurante {
 
     private String direccion;
 
+    private Cocina tipo;
+
     public Restaurante() {
     }
 
@@ -33,5 +35,13 @@ public class Restaurante {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    public Cocina getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(Cocina tipo) {
+        this.tipo = tipo;
     }
 }
