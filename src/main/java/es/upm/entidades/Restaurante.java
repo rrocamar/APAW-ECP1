@@ -1,5 +1,8 @@
 package es.upm.entidades;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Restaurante {
 
     private String id;
@@ -10,7 +13,14 @@ public class Restaurante {
 
     private Cocina tipo;
 
-    public Restaurante() {
+    private List<Empleado> empleados;
+
+    private Carta carta;
+
+    public Restaurante(String nombre) {
+        this.nombre = nombre;
+        this.empleados = new ArrayList<Empleado>();
+        this.carta = new Carta();
     }
 
     public String getId() {
