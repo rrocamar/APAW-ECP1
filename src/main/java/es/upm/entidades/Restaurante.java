@@ -52,6 +52,10 @@ public class Restaurante {
         this.tipo = tipo;
     }
 
+    public static Builder builder(String id, String nombre) {
+        return new Builder(id, nombre);
+    }
+
     public static class Builder {
 
         private Restaurante restaurante;
