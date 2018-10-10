@@ -17,18 +17,15 @@ public class Restaurante {
 
     private Carta carta;
 
-    public Restaurante(String nombre) {
+    public Restaurante(String id, String nombre) {
+        this.id = id;
         this.nombre = nombre;
-        this.empleados = new ArrayList<Empleado>();
+        this.empleados = new ArrayList<>();
         this.carta = new Carta();
     }
 
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getNombre() {

@@ -13,10 +13,8 @@ public class RestauranteFactoriaTest {
 
     @BeforeEach
     void init() {
-        restaurante1 = new Restaurante("McDonalds");
-        restaurante1.setId("1");
-        restaurante2 = new Restaurante("Burger King");
-        restaurante2.setId("2");
+        restaurante1 = new Restaurante("1", "McDonalds");
+        restaurante2 = new Restaurante("2", "Burger King");
         factoria.put(restaurante1);
         factoria.put(restaurante2);
     }
