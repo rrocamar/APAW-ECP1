@@ -24,4 +24,12 @@ public class RestauranteFactoria {
     public Restaurante get(String id) {
         return this.restaurantes.get(id);
     }
+
+    public void remove(String id) {
+        this.restaurantes.remove(id);
+    }
+
+    public boolean exists(String id) {
+        return this.restaurantes.get(id) != null;
+    }
 }
