@@ -51,4 +51,32 @@ public class Restaurante {
     public void setTipo(Cocina tipo) {
         this.tipo = tipo;
     }
+
+    public static class Builder {
+
+        private Restaurante restaurante;
+
+        private Builder(String id, String nombre) {
+            this.restaurante = new Restaurante(id, nombre);
+        }
+
+        public Builder nombre(String nombre) {
+            this.restaurante.setNombre(nombre);
+            return this;
+        }
+
+        public Builder direccion(String direccion) {
+            this.restaurante.setDireccion(direccion);
+            return this;
+        }
+
+        public Builder tipo(Cocina tipo) {
+            this.restaurante.setTipo(tipo);
+            return this;
+        }
+
+        public Restaurante build() {
+            return this.restaurante;
+        }
+    }
 }
