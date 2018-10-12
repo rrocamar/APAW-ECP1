@@ -3,7 +3,9 @@ package es.upm.entidades;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RestauranteFactoria {
+import es.upm.entidades.observer.Observable;
+
+public class RestauranteFactoria extends Observable {
 
     private static RestauranteFactoria instance = new RestauranteFactoria();
 
@@ -19,6 +21,7 @@ public class RestauranteFactoria {
 
     public void put(Restaurante restaurante) {
         this.restaurantes.put(restaurante.getId(), restaurante);
+        super.notifyObservers(restaurante.getId());
     }
 
     public Restaurante get(String id) {
