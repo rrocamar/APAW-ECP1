@@ -20,12 +20,13 @@ public class EmpleadoCompuesto extends RestauranteComponente {
 
     @Override
     public void remove(RestauranteComponente componente) {
+        this.componentes.remove(componente);
 
     }
 
     @Override
     public void add(RestauranteComponente componente) {
-
+        this.componentes.add(componente);
     }
 
     @Override
