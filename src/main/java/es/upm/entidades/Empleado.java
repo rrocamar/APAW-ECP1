@@ -10,6 +10,8 @@ public class Empleado {
 
     private LocalDateTime fechaContratacion;
 
+    private double salarioBrutoAnual;
+
     public Empleado() {
 
     }
@@ -36,5 +38,13 @@ public class Empleado {
 
     public void setFechaContratacion(LocalDateTime fechaContratacion) {
         this.fechaContratacion = fechaContratacion;
+    }
+
+    public double getSalarioBrutoAnual() {
+        return salarioBrutoAnual;
+    }
+
+    public void setSalarioBrutoAnual(double salarioBrutoAnual) {
+        this.salarioBrutoAnual = salarioBrutoAnual;
     }
 }

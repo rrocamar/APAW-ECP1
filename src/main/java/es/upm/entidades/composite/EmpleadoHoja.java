@@ -27,4 +27,9 @@ public class EmpleadoHoja extends RestauranteComponente {
     public String view() {
         return empleado.getId();
     }
+
+    @Override
+    public double getCoste() {
+        return empleado.getSalarioBrutoAnual();
+    }
 }

@@ -38,4 +38,12 @@ public class EmpleadoCompuesto extends RestauranteComponente {
     public String view() {
         return nombre;
     }
+
+    @Override
+    public double getCoste() {
+        double costeTotal = 0;
+        for (RestauranteComponente componente : componentes)
+            costeTotal += componente.getCoste();
+        return costeTotal;
+    }
 }

@@ -9,4 +9,6 @@ public abstract class RestauranteComponente {
     public abstract boolean isComponente();
 
     public abstract String view();
+
+    public abstract double getCoste();
 }
