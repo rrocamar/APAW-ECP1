@@ -2,6 +2,12 @@
 #### Asignatura: *Ingeniería Web: Visión General*
 #### [Máster en Ingeniería Web por la U.P.M.](http://miw.etsisi.upm.es)
 
+## Aplicar patron observer a la factoria.
+Para aplicar este patron, he pensado que va a existir un dueño de la franquicia que desea que se le notifique cada vez que se abre un nuevo restaurante.
+La finalidad es crear una nueva cuenta bancaria, para ingresar los pingües beneficios.
+Para ello, la clase PropietarioFranquicia, implementa la interfaz Observer, que tiene un unico metodo llamado update que pasa por parametro un string con el id del nuevo restaurante creao.
+En el test, comprobaré que después de crear un restaurante, el dueño de la franquicia tiene una nueva cuenta bancaria.
+
 ### Tecnologías necesarias
 * Java
 * Maven
