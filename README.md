@@ -4,8 +4,8 @@
 # Descripción
 Este es el desarrollo de la primera práctica de Patrones de Diseño, correspondiente a la asignatura *Arquitectura y Patrones para Aplicaciones Web*.
 # Elaboración de entidades
-![themes-architecture-diagram](https://github.com/rrocamar/APAW-ECP2-RamonRoca/blob/develop/docs/DiagramaDeClasesPatronEstrategia.png)
-**Imágen extraida de wikipedia**
+![themes-entities-diagram](https://github.com/rrocamar/APAW-ECP1-RamonRoca/blob/develop/docs/DiagramaDeClases.png)
+
 # Ejercicios
 ## 1 Factoría con patrón Singleton de una entidad. Se almacenan y se buscan las entidades por la id de la entidad . La factoría no los crea, solo gestiona los objetos.
   Creada una factoria para la clase Empleado y otra para la calse Restaurante. Ambas tienen su clase de Test.
@@ -24,7 +24,8 @@ Cuando se ofrece una funcionalidad, que se puede llevar a cabo de varias maneras
 Cuando un algoritmo utiliza datos que los clientes no tienen que conocer.
 Cuando una clase define muchos comportamientos, se generan muchas sentencias condicionales. Para evitar ese código espagueti, se lleva cada rama a una implementación de la estrategia.
 #### Estructura
-![Diagrama ](https://es.wikipedia.org/wiki/Strategy_(patr%C3%B3n_de_dise%C3%B1o)#/media/File:DiagramaEjemplo.png)
+![themes-strategy-diagram](https://github.com/rrocamar/APAW-ECP1-RamonRoca/blob/develop/docs/DiagramaDeClasesPatronEstrategia.png)
+**Imágen extraida de wikipedia**
 
 #### Participantes
 * Contexto: La clase que utiliza los distintos algoritmos. Configura una estrategia concreta. También podría definir una interfaz, por si las estrategias necesitarán acceder a sus datos. O, también, pasarse él mismo como parámetro.
